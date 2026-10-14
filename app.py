@@ -4,7 +4,7 @@ from preprocess import clean_text
 
 @st.cache_resource
 def load():
-    return joblib.load("vectorizer.joblib"), joblib.load("model_lr.joblib")
+    return joblib.load("vectorizer.joblib"), joblib.load("model_dt.joblib")
 
 vectorizer, model = load()
 
